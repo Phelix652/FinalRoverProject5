@@ -5,13 +5,12 @@ import requests
 from PIL import Image
 from io import BytesIO
 from datetime import datetime, timedelta
-from dotenv import load_dotenv
 
-load_dotenv()
-API_KEY = os.getenv("API_KEY")
+import streamlit as st
+
+API_KEY = st.secrets["API_KEY"]
+
 rover = "perseverance"
-
-st.write(f"API_KEY loaded: {API_KEY is not None}")
 
 cameras = [
     "FRONT_HAZCAM_LEFT",
