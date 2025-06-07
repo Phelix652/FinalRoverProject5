@@ -6,8 +6,6 @@ from PIL import Image
 from io import BytesIO
 from datetime import datetime, timedelta
 
-import streamlit as st
-
 API_KEY = st.secrets["API_KEY"]
 
 rover = "perseverance"
