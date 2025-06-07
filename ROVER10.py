@@ -9,8 +9,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
-
 rover = "perseverance"
+
+st.write(f"API_KEY loaded: {API_KEY is not None}")
 
 cameras = [
     "FRONT_HAZCAM_LEFT",
